@@ -60,6 +60,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'GPTFlow',
               path: 'gPTFlow',
               builder: (context, params) => const GPTFlowWidget(),
+            ),
+            FFRoute(
+              name: 'StartPage',
+              path: 'startPage',
+              builder: (context, params) => StartPageWidget(
+                logo: params.getParam('logo', ParamType.FFUploadedFile),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
