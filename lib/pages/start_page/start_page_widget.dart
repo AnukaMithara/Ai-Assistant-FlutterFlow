@@ -1,18 +1,15 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'start_page_model.dart';
 export 'start_page_model.dart';
 
 class StartPageWidget extends StatefulWidget {
   const StartPageWidget({
-    Key? key,
+    super.key,
     this.logo,
-  }) : super(key: key);
+  });
 
   final FFUploadedFile? logo;
 
@@ -61,13 +58,13 @@ class _StartPageWidgetState extends State<StartPageWidget> {
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0.00, 0.00),
+            alignment: const AlignmentDirectional(0.00, 0.00),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.00, 0.00),
+                  alignment: const AlignmentDirectional(0.00, 0.00),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(

@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
 
 import '/flutter_flow/flutter_flow_util.dart';
 import 'api_manager.dart';
@@ -21,13 +20,13 @@ class OpenAIChatGPTGroup {
 class SendFullPromptCall {
   Future<ApiCallResponse> call({
     String? apiKey = '',
-    dynamic? promptJson,
+    dynamic promptJson,
   }) async {
     final prompt = _serializeJson(promptJson);
     final ffApiRequestBody = '''
 {
   "model": "gpt-3.5-turbo",
-  "messages": ${prompt}
+  "messages": $prompt
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Send Full Prompt',
@@ -35,7 +34,7 @@ class SendFullPromptCall {
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ${apiKey}',
+        'Authorization': 'Bearer $apiKey',
       },
       params: {},
       body: ffApiRequestBody,

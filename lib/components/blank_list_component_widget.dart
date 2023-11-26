@@ -2,14 +2,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'blank_list_component_model.dart';
 export 'blank_list_component_model.dart';
 
 class BlankListComponentWidget extends StatefulWidget {
-  const BlankListComponentWidget({Key? key}) : super(key: key);
+  const BlankListComponentWidget({super.key});
 
   @override
   _BlankListComponentWidgetState createState() =>
@@ -47,7 +44,7 @@ class _BlankListComponentWidgetState extends State<BlankListComponentWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
           child: Container(
             constraints: BoxConstraints(
               maxWidth: () {
@@ -62,7 +59,7 @@ class _BlankListComponentWidgetState extends State<BlankListComponentWidget> {
             ),
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).primary30,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 3.0,
                   color: Color(0x33000000),
@@ -76,14 +73,14 @@ class _BlankListComponentWidgetState extends State<BlankListComponentWidget> {
               ),
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SelectionArea(
                       child: AutoSizeText(
-                    'Welcome to the Job Talk AI Assistant. If ready, say \"Start\"🫡',
+                    'Welcome to the Job Talk AI Assistant. If ready, say "Start"🫡',
                     style: FlutterFlowTheme.of(context).titleMedium.override(
                           fontFamily: 'Plus Jakarta Sans',
                           color: FlutterFlowTheme.of(context).primaryBtnText,

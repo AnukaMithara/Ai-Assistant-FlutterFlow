@@ -3,20 +3,17 @@ import '/components/blank_list_component_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'g_p_t_flow_model.dart';
 export 'g_p_t_flow_model.dart';
 
 class GPTFlowWidget extends StatefulWidget {
-  const GPTFlowWidget({Key? key}) : super(key: key);
+  const GPTFlowWidget({super.key});
 
   @override
   _GPTFlowWidgetState createState() => _GPTFlowWidgetState();
@@ -83,14 +80,14 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
               ),
             ),
             child: Align(
-              alignment: AlignmentDirectional(0.00, 0.00),
+              alignment: const AlignmentDirectional(0.00, 0.00),
               child: Container(
                 width: double.infinity,
                 height: double.infinity,
-                constraints: BoxConstraints(
+                constraints: const BoxConstraints(
                   maxWidth: 770.0,
                 ),
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -98,12 +95,12 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                       width: 385.0,
                       height: 91.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFF7925C7),
+                        color: const Color(0xFF7925C7),
                         borderRadius: BorderRadius.circular(5.0),
                         shape: BoxShape.rectangle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.00, 0.00),
+                        alignment: const AlignmentDirectional(0.00, 0.00),
                         child: Text(
                           'Job Talk',
                           style:
@@ -116,9 +113,9 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                     ),
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(0.00, -1.00),
+                        alignment: const AlignmentDirectional(0.00, -1.00),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -132,11 +129,11 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                 Container(
                                   width: 100.0,
                                   height: 24.0,
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                 ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 12.0, 12.0, 0.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(12.0),
@@ -160,10 +157,10 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              const AlignmentDirectional(0.00, -1.00),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             child: Builder(
                                               builder: (context) {
@@ -171,7 +168,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                         ?.toList() ??
                                                     [];
                                                 if (chat.isEmpty) {
-                                                  return Container(
+                                                  return const SizedBox(
                                                     width: double.infinity,
                                                     child:
                                                         BlankListComponentWidget(),
@@ -189,7 +186,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                         chat[chatIndex];
                                                     return Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   12.0,
@@ -237,7 +234,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .primary30,
-                                                                        boxShadow: [
+                                                                        boxShadow: const [
                                                                           BoxShadow(
                                                                             blurRadius:
                                                                                 3.0,
@@ -259,7 +256,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12.0,
                                                                             12.0,
                                                                             12.0,
@@ -289,7 +286,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           6.0,
                                                                           0.0,
@@ -321,7 +318,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                                                       fontSize: 12.0,
                                                                                     ),
                                                                               ),
-                                                                              duration: Duration(milliseconds: 2000),
+                                                                              duration: const Duration(milliseconds: 2000),
                                                                               backgroundColor: FlutterFlowTheme.of(context).primary,
                                                                             ),
                                                                           );
@@ -332,7 +329,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                                               MainAxisSize.max,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 4.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 4.0, 0.0),
                                                                               child: Icon(
                                                                                 Icons.content_copy,
                                                                                 color: FlutterFlowTheme.of(context).primary30,
@@ -401,7 +398,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                                                   ),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12.0,
                                                                             12.0,
@@ -452,14 +449,14 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           12.0, 32.0, 12.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3.0,
                               color: Color(0x33000000),
@@ -469,14 +466,14 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 4.0, 10.0, 4.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Expanded(
-                                child: Container(
+                                child: SizedBox(
                                   width: 300.0,
                                   child: TextFormField(
                                     controller: _model.textController,
@@ -489,42 +486,42 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                       hintText: 'Type something...',
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall,
-                                      enabledBorder: UnderlineInputBorder(
+                                      enabledBorder: const UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
-                                      focusedBorder: UnderlineInputBorder(
+                                      focusedBorder: const UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
-                                      errorBorder: UnderlineInputBorder(
+                                      errorBorder: const UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
-                                      focusedErrorBorder: UnderlineInputBorder(
+                                      focusedErrorBorder: const UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
@@ -589,7 +586,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                   await _model.listViewController?.animateTo(
                                     _model.listViewController!.position
                                         .maxScrollExtent,
-                                    duration: Duration(milliseconds: 100),
+                                    duration: const Duration(milliseconds: 100),
                                     curve: Curves.ease,
                                   );
 
@@ -609,7 +606,7 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                       Container(
                         width: 100.0,
                         height: 60.0,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                       ),
                   ],
                 ),
