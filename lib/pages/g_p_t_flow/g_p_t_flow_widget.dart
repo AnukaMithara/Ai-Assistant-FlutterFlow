@@ -91,6 +91,26 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
+                    Container(
+                      width: 385.0,
+                      height: 91.0,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF7925C7),
+                        borderRadius: BorderRadius.circular(5.0),
+                        shape: BoxShape.rectangle,
+                      ),
+                      child: Align(
+                        alignment: const AlignmentDirectional(0.00, 0.00),
+                        child: Text(
+                          'Job Talk',
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Plus Jakarta Sans',
+                                    fontSize: 40.0,
+                                  ),
+                        ),
+                      ),
+                    ),
                     Expanded(
                       child: Align(
                         alignment: const AlignmentDirectional(0.00, -1.00),
@@ -111,46 +131,6 @@ class _GPTFlowWidgetState extends State<GPTFlowWidget> {
                                   height: 24.0,
                                   decoration: const BoxDecoration(),
                                 ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    24.0, 0.0, 24.0, 12.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    SizedBox(
-                                      width: 348.0,
-                                      height: 60.0,
-                                      child: Stack(
-                                        children: [
-                                          if (responsiveVisibility(
-                                            context: context,
-                                            tablet: false,
-                                            tabletLandscape: false,
-                                            desktop: false,
-                                          ))
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.00, 0.00),
-                                              child: Text(
-                                                'Interview BOT AI',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          fontSize: 25.0,
-                                                        ),
-                                              ),
-                                            ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(

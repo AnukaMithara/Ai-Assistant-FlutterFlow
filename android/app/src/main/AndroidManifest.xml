@@ -45,7 +45,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="aiassistant" android:host="aiassistant.com" />
+                <data android:scheme="jobtalk" android:host="jobtalk.com" />
             </intent-filter>
 
         </activity>

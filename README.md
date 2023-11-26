@@ -1,4 +1,4 @@
-# AI Assistant
+# JobTalk
 
 A new Flutter project.
 
