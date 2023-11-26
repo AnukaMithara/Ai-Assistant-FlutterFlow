@@ -149,12 +149,12 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color error = const Color(0xFFE21C3D);
   late Color info = const Color(0xFF1C4494);
 
-  late Color primaryBtnText = const Color(0xFFFFFFFF);
-  late Color lineColor = const Color(0xFFE0E3E7);
-  late Color overlay = const Color(0x9AFFFFFF);
-  late Color overlay0 = const Color(0x00FFFFFF);
-  late Color primary30 = const Color(0x4D9489F5);
-  late Color secondary30 = const Color(0x4C39D2C0);
+  late Color primaryBtnText = Color(0xFFFFFFFF);
+  late Color lineColor = Color(0xFFE0E3E7);
+  late Color overlay = Color(0x9AFFFFFF);
+  late Color overlay0 = Color(0x00FFFFFF);
+  late Color primary30 = Color(0x4D9489F5);
+  late Color secondary30 = Color(0x4C39D2C0);
 }
 
 abstract class Typography {
@@ -327,12 +327,12 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color error = const Color(0xFFE21C3D);
   late Color info = const Color(0xFF1C4494);
 
-  late Color primaryBtnText = const Color(0xFFFFFFFF);
-  late Color lineColor = const Color(0xFF22282F);
-  late Color overlay = const Color(0x981D2428);
-  late Color overlay0 = const Color(0x000B191E);
-  late Color primary30 = const Color(0x4D9489F5);
-  late Color secondary30 = const Color(0x4C39D2C0);
+  late Color primaryBtnText = Color(0xFFFFFFFF);
+  late Color lineColor = Color(0xFF22282F);
+  late Color overlay = Color(0x981D2428);
+  late Color overlay0 = Color(0x000B191E);
+  late Color primary30 = Color(0x4D9489F5);
+  late Color secondary30 = Color(0x4C39D2C0);
 }
 
 extension TextStyleHelper on TextStyle {
